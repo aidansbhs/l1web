@@ -1,31 +1,95 @@
 html {
-    background-color:red;
+    background-color: #cda767;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+
 
 nav {
     background-color: black;
-    margin: 10vh 0px;
+    margin: 6vh 200px;
     display: flex;
 }
 
 nav a {
-    background-color: #cda767;
-    width: 10%;
+    background-color: red;
     display: inline-block;
+    width: 30%;
+    padding-right: 10vh;
+
+}
+section {
+    background-color: red;
+    min-height: 35vh;
+    margin: 5vh auto;
+    width: 80%;
 }
 
-section {
-    background-color: white;
-    min-height: 50vh;
-    margin: 5vh auto;
-    width: 70%
+.wrap {
+    display: flex;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    margin: 0vh auto 0vh 40vh;
+    font-family: "good brush";
+    height: 1px;
+    
+}
+
+p {
+/*    display: inline-block;*/
+    width: 1%;
+    vertical-align: bottom; 
+    margin-top: 30vh;
+}
+
+h2 {
+    width: 40%;
+    al
+}
+.box {
+/*    display: inline-block;*/
+    width: 20%;
+    height: 20vh;
+    background-color: black;
+    margin-left: 2vh;
+}
+
+.box2 {
+/*    display: inline-block;*/
+    width: 20%;
+    height: 20vh;
+    background-color: black;
+    margin-left: 25vh;
+    margin-top:
+}
+
+.box3 {
+/*    display: inline-block;*/
+    width: 20%;
+    height: 20vh;
+    background-color: black;
+    margin-left: 50vh;
+}
+
+.box4 {
+/*    display: inline-block;*/
+    width: 20%;
+    height: 20vh;
+    background-color: black;
+    margin-left: 75vh;
+}
+.box5 {
+    /*    display: inline-block;*/
+    width: 80%;
+    height: 25vh;
+    background-color: black;
+    margin-left: 7vh;
+    margin-top: 3vh;
 }
 
 footer {
     background-color: red;
- 
+   
+}
