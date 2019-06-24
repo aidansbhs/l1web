@@ -31,6 +31,12 @@ section {
     min-height: 35vh;
     margin: 0px auto;
     width: 70%;
+    background-image: url("Img/Ramen.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
 }
 
 /*
