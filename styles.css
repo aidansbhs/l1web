@@ -31,12 +31,6 @@ section {
     min-height: 35vh;
     margin: 0px auto;
     width: 70%;
-    background-image: url("Img/Ramen.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    
 }
 
 /*
@@ -95,19 +89,12 @@ h3 {
     background-color: red;
     margin: 0% auto;
     min-height: 7vh;
-    width: 14%; 
-}
+    width: 14%;
 
-footer {
-    background-color: red;
-    height: 10vh;
-}
-
-p {
-    width: 100%;
-    margin: auto;
     
 }
+
+p
 /*
 div {
     width: 100%;
