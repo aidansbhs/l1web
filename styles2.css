@@ -1,0 +1,47 @@
+html {
+    background-color: #cda767;
+}
+
+*  {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 46.2%,#000000 46.2%,#524229  46.2%,#524229  100%);
+}
+
+nav {
+    width: 805px;
+    margin: 1vh auto;
+    display: flex;
+    text-align: center;
+}
+
+nav a {
+    background-color: none;
+    display: inline-block;
+    width: 25%;
+    font-family: "KG all of me";
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+section {
+    min-height: 400px;
+    margin: 0px auto;
+    width: 808px;    
+}
+
+h1 {
+    text-align: center;
+    font-family: "good brush";
+    font-size: 50px;
+}
+
+.line {
+    width: 24%;
+    border-bottom: 4px solid #021a40;
+    margin: 0% 2px 10px 2px;
+}
