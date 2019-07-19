@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #cda767 0%,#cda767 46.2%,#000000 46.2%,#524229  46.2%,#524229  100%);
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 46.2%,#000000 46.2%,#524229  46.2%,#524229 100%);
 }
 
 nav {
@@ -77,11 +77,11 @@ h1 {
     height: 100%;
 }
 
-nav a:hover {
+ a:hover {
     color: red;
 }
  
-.active {
+a:active {
     color: red;
 }
 

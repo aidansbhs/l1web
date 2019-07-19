@@ -61,3 +61,12 @@ img {
 
 .zoom:hover {
   transform: scale(1.25);
+}
+
+a:hover {
+    color: red;
+}
+ 
+a:active {
+    color: red;
+}

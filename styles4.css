@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
 html {
-    background-color: #cda767;
+    background-color: #524229 ;
+   
 }
 
 *  {
   margin: 0px;
   padding: 0px;
+  user-select: none;
 }
 
 body {
-    background: linear-gradient(to bottom, #cda767 0%,#cda767 70%,#000000 70%,#524229  70%,#524229  100%);
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 40%,#000000 40%,#524229  40%,#524229  100%);
+    font-family: 'Kavianar', cursive;
 }
 
 nav {
@@ -28,6 +33,11 @@ nav a {
     font-size: 20px;
     color: black;
 }
+
+nav a:hover {
+    color: red;
+}
+
 section {
     min-height: 400px;
     margin: 0px auto;
@@ -44,4 +54,140 @@ h1 {
     text-align: center;
     font-family: "good brush";
     font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Bebas Neue";
+    font-size: 40px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 21px;
+    text-align: center;
+    font-family: "KG All of me";
+}
+p {
+    font-size: 18px;
+    font-family:'Francois One', sans-serif; 
+    text-align: center;
+}
+.wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    letter-spacing: 1px;
+}
+
+.form {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top form,
+.middle form,
+.bottom form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    outline: none;
+    transition: all 02.s ease;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color: #4ca1af;
+    box-shadow: inset 0 1px 1px rgba(0,0,0, 0.0125),
+        0 0 8px rgba(76,161,175, 0.5);   
+}
+
+.form .label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.top-form .inner-form {
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea {
+    height: 120px;
+}
+
+.btn {
+    background: #4ca1af;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+    /*this doesn't work*/
+}
+
+::-moz-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+     /*this doesn't work*/
+}
+
+::-ms-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+     /*this doesn't work*/
+}
+
+@media screen and (max-width: 460px) {
+    .wrapper {
+        margin: 25px auto 0;
+    }
+    .top-form .inner-form  {
+        width: 100%;
+        margin-top: 5px 0;
+    }
+}
+
+footer {
+    height: 5vh;
+    background-color: #524229;
 }
