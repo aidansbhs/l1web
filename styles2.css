@@ -53,3 +53,9 @@ a:hover {
 a:active {
     color: red;
 }
+
+h2 {
+    text-align: center;
+    font-family: "KG All of me";
+    font-size: 35px;
+}

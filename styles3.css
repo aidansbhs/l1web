@@ -31,7 +31,8 @@ nav a {
 section {
     min-height: 400px;
     margin: 0px auto;
-    width: 808px;    
+    width: 70%;    
+    border: 6px solid #021a40;
 }
 
 h1 {
@@ -48,25 +49,40 @@ h1 {
 
 img {
     background-color: #22caff;
-    /*for about page*/
+    width: 250px;
+    border: 3px solid black;
+    height: 225px;
+    float: left;
 }
+    
 
 .zoom {
-  padding: 25px;
   transition: transform .2s;
+  padding: 50px; 
   width: 200px;
   height: 200px;
-  margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
 a:hover {
     color: red;
 }
  
-a:active {
-    color: red;
+p {
+    display: inline-block;
+    width: 50%;
+    float: right;
+    margin: auto;
+    font-size: 20px;
+    font-family: "KG All of me";
+    
+    
+}
+
+.wrap {
+    display: inline-block;
+    width: 100%;
 }
