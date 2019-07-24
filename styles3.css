@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #cda767 0%,#cda767 46.2%,#000000 46.2%,#524229  46.2%,#524229  100%);
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 55%,#000000 55%,#524229  55%,#524229  100%);
 }
 
 nav {
@@ -53,14 +53,17 @@ img {
     border: 3px solid black;
     height: 225px;
     float: left;
+    
 }
     
 
 .zoom {
   transition: transform .2s;
-  padding: 50px; 
+  padding: 20px 70px 40px 10px;; 
   width: 200px;
   height: 200px;
+  margin: 30px;
+  
 }
 
 .zoom:hover {
@@ -75,9 +78,11 @@ p {
     display: inline-block;
     width: 50%;
     float: right;
-    margin: auto;
+    margin: 20px 163px 0px 88px;
     font-size: 20px;
     font-family: "KG All of me";
+    padding: 42px;
+    text-align: left;
     
     
 }
@@ -85,4 +90,21 @@ p {
 .wrap {
     display: inline-block;
     width: 100%;
+}
+
+p2 {
+    font-family: "KG All of me";
+    font-size: 20px;
+    
+}
+
+h2 {
+    text-align: center;
+    font-family: "good brush";
+    font-size: 40px;
+    
+}
+
+p2 li {
+    list-style: none;
 }
