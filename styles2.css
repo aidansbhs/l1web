@@ -58,4 +58,29 @@ h2 {
     text-align: center;
     font-family: "KG All of me";
     font-size: 35px;
+    text-decoration: underline;
+}
+
+li {
+    list-style: none;
+    
+}
+
+p {
+    font-size: 20px;
+    font-family: "KG All of me";
+    display: block;
+    
+}
+
+h4 {
+    font-size: 30px;
+    display: inline-block;
+    font-family: "";
+}
+
+h3 {
+    font-size: 40px;
+    font-family: "";
+    
 }

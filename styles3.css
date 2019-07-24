@@ -78,8 +78,8 @@ p {
     display: inline-block;
     width: 50%;
     float: right;
-    margin: 20px 163px 0px 88px;
-    font-size: 20px;
+    margin: 70px 163px 0px 88px;
+    font-size: 25px;
     font-family: "KG All of me";
     padding: 42px;
     text-align: left;
@@ -95,6 +95,8 @@ p {
 p2 {
     font-family: "KG All of me";
     font-size: 20px;
+    margin: auto;
+    padding: 10px 10px 10px 10px;
     
 }
 
@@ -102,9 +104,12 @@ h2 {
     text-align: center;
     font-family: "good brush";
     font-size: 40px;
+    padding-top: 50px; 
     
 }
 
 p2 li {
     list-style: none;
+    margin: 15px 5px 5px 5px;
+    text-align: center;
 }
