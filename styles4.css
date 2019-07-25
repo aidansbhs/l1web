@@ -38,10 +38,14 @@ nav a:hover {
     color: red;
 }
 
+.active {
+    color: red;
+}
+
 section {
     min-height: 400px;
     margin: 0px auto;
-    width: 808px;    
+    width: 835px;    
 }
 
 .line {
@@ -75,7 +79,6 @@ p {
     font-size: 18px;
     font-family:'Francois One', sans-serif; 
     text-align: center;
-    margin: 10px auto;
 }
 .wrapper {
     width: 100%;
@@ -163,19 +166,19 @@ p {
 ::-webkit-input-placeholder {
     font-family: 'Kavianar', cursive;
     text-transform: capitalize;
-    /*this doesn't work*/
+   
 }
 
 ::-moz-input-placeholder {
     font-family: 'Kavianar', cursive;
     text-transform: capitalize;
-     /*this doesn't work*/
+    
 }
 
 ::-ms-input-placeholder {
     font-family: 'Kavianar', cursive;
     text-transform: capitalize;
-     /*this doesn't work*/
+     
 }
 
 @media screen and (max-width: 460px) {
@@ -188,7 +191,10 @@ p {
     }
 }
 
+
 footer {
     height: 5vh;
     background-color: #524229;
+    align-content: center;
 }
+

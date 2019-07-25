@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #cda767 0%,#cda767 55%,#000000 55%,#524229  55%,#524229  100%);
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 50%,#000000 50%,#524229  50%,#524229  100%);
 }
 
 nav {
@@ -48,7 +48,7 @@ h1 {
 }
 
 img {
-    background-color: #22caff;
+    background-color: #021a40;
     width: 250px;
     border: 3px solid black;
     height: 225px;
@@ -59,7 +59,7 @@ img {
 
 .zoom {
   transition: transform .2s;
-  padding: 20px 70px 40px 10px;; 
+  padding: 20px 70px 40px 10px; 
   width: 200px;
   height: 200px;
   margin: 30px;
@@ -73,16 +73,21 @@ img {
 a:hover {
     color: red;
 }
+
+.active {
+    color: red;
+}
  
 p {
     display: inline-block;
     width: 50%;
     float: right;
-    margin: 70px 163px 0px 88px;
-    font-size: 25px;
-    font-family: "KG All of me";
+    margin: 8% 19% 1% 1%;
+    font-size: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bold;
     padding: 42px;
-    text-align: left;
+    text-align: center;
     
     
 }
@@ -93,18 +98,23 @@ p {
 }
 
 p2 {
-    font-family: "KG All of me";
+    font-family: 'Rubik Mono One', sans-serif;
     font-size: 20px;
-    margin: auto;
-    padding: 10px 10px 10px 10px;
-    
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 8% 23% 1% 1%;
+    display: inline-block;
+    width: 50%;
+    float: right;
 }
 
 h2 {
     text-align: center;
     font-family: "good brush";
     font-size: 40px;
-    padding-top: 50px; 
+    padding-top: 50px;
+    display: block;
     
 }
 
@@ -112,4 +122,25 @@ p2 li {
     list-style: none;
     margin: 15px 5px 5px 5px;
     text-align: center;
+}
+
+ul {
+    border: 6px solid black;
+    margin: 1%;
+}
+
+.zoom2 {
+  transition: transform .2s;  
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  padding: 20px 70px 40px 10px; 
+}
+
+.zoom2:hover {
+  transform: scale(1.15);
+}
+
+footer {
+    height: 11vh;
 }

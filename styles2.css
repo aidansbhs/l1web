@@ -1,3 +1,4 @@
+
 html {
     background-color: #cda767;
 }
@@ -28,11 +29,7 @@ nav a {
     color: black;
 }
 
-section {
-    min-height: 400px;
-    margin: 0px auto;
-    width: 808px;    
-}
+
 
 h1 {
     text-align: center;
@@ -50,7 +47,7 @@ a:hover {
     color: red;
 }
  
-a:active {
+.active {
     color: red;
 }
 
@@ -59,6 +56,12 @@ h2 {
     font-family: "KG All of me";
     font-size: 35px;
     text-decoration: underline;
+    margin: 0;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #000;
 }
 
 li {
@@ -66,12 +69,6 @@ li {
     
 }
 
-p {
-    font-size: 20px;
-    font-family: "KG All of me";
-    display: block;
-    
-}
 
 h4 {
     font-size: 30px;
@@ -79,8 +76,54 @@ h4 {
     font-family: "";
 }
 
-h3 {
-    font-size: 40px;
-    font-family: "";
-    
+@use postcss-nested;
+
+
+
+* {
+  box-sizing: border-box;
 }
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100%;
+}
+
+  .menu-item {
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+    padding: 0 1rem;
+    margin: 0 0 1rem;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+      header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+        .spacer {
+          content: '';
+          width: 100%;
+          height: 1px;
+          margin: 0 .5rem;
+          border-bottom: 1px dashed black;
+          flex: 1;
+        }
+  
+        h3 {
+          margin: 0;
+          font-size: 1rem;
+        }
+    
+  

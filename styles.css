@@ -35,9 +35,9 @@ section {
     margin-bottom: 2vh;
 }
 
+
 div.m {
     font-size: 24px;
- /*   color: black; -this is not working, it is being blocked by a href */
     min-height: 2vh;
     width: 20vh; 
     margin: 0% auto;
@@ -84,7 +84,7 @@ h1 {
     color: red;
 }
  
-a:active {
+.active {
     color: red;
 }
 
@@ -118,6 +118,7 @@ h4 {
     text-align: center;
     font-family: "good brush";
     font-size: 30px;
+    color: white;
 }
 
 h5 {
@@ -189,4 +190,5 @@ p {
 img {
     border: 4px solid ;
 }
+
 
