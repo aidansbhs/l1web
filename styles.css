@@ -2,6 +2,7 @@
 
 html {
     background-color: #cda767;
+    margin: 0;
 }
 
 *  {
@@ -11,7 +12,9 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, #cda767 0%,#cda767 46.2%,#000000 46.2%,#524229  46.2%,#524229 100%);
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 40.35%,#000000 40.35%,#524229  40.35%,#524229 100%);
+    margin: 0; 
+/*    Comment: This is responsible for making the background half #cda767 and half #524229, it is an implication of making the web page more aesthetically pleasing*/
 }
 
 nav {
@@ -20,7 +23,6 @@ nav {
     display: flex;
     text-align: center;
 }
-
 
 nav a {
     background-color: none;
@@ -31,6 +33,7 @@ nav a {
     font-size: 20px;
     color: black;
 }
+
 section {
     min-height: 400px;
     margin: 0px auto;
@@ -41,14 +44,16 @@ section {
 div.m {
     font-size: 24px;
     min-height: 2vh;
-    width: 20vh; 
+    width: 24vh; 
     margin: 0% auto;
     font-family: "KG all of me";
     background-color: #be6006;
-    padding: 0.25% 0.5% 0.5% 1%;
+    padding: 0.5% 0.5% 0.5% 0.25%;
     border: 4px solid #021a40;
     text-decoration: none;
-    margin-bottom: 3vh
+    margin-bottom: 3vh;
+    text-align: center;
+/*    Comment: this is for structuring the menu link below the main photo */
 }
 
 h1 {
@@ -61,20 +66,26 @@ h1 {
     width: 24%;
     border-bottom: 4px solid #021a40;
     margin: 0% 2px 10px 2px;
+/*    Comment: this is to make the lines appear next to the nav*/
 }
 
 .boxes {
     width: 100%;
     margin: auto;
     display: flex;
+    max-width: 100%;
+    max-height: 20%;
+/*    Comment: This is the base support for the 4 images below eg boxes*/
 }
 
 .boxes li {
     width: 15%;
     background-color: black;
-    min-height: 25%;
+    min-height: 15%;
     margin: 0.5% auto;
     list-style: none;
+    min-width: 200px;
+    max-height: 20%;
 }
 
 .boxes li img {
@@ -82,7 +93,7 @@ h1 {
     height: 100%;
 }
 
- a:hover {
+a:hover {
     color: red;
 }
  
@@ -120,6 +131,7 @@ h4 {
     text-align: center;
     font-family: "good brush";
     font-size: 30px;
+    color: white;
 }
 
 h5 {
@@ -134,50 +146,15 @@ h5 {
 h6 {
     text-align: center;
     font-family: "KG All of me";
-    font-size: 12px;
+    font-size: 15px;
+    margin: 10px;
 }
-
-div.a {
-    color: white;
-    font-family: "good brush";
-    text-align: left;
-    font-size: 21px;
-    margin: 1vh auto ;
-    display: inline-block
-}
-
-div.b {
-    color: white;
-    font-family: "good brush";
-    text-align: center;
-    font-size: 21px;
-    margin: 1vh auto;
-    display: inline-block
-}
-
-div.c {
-    color: white;
-    font-family: "good brush";
-    text-align: center;
-    font-size: 21px;
-    margin: 1vh auto;
-    display: inline-block
-}
-
-div.d {
-     color: white;
-    font-family: "good brush";
-    text-align: right;
-    font-size: 21px;
-    margin: 1vh auto;
-    display: inline-block
-}
-   
 
 footer {
-    background-color: #201d14;
-    height: 13vh;
-    margin-top: 90px;
+  height: 13vh;;
+  background-color: #201d14;
+  margin-top: 200px;  
+     
 }
 
 p {
@@ -188,68 +165,120 @@ p {
     margin-bottom: 1vh;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 680px;
-    margin: 100px auto 0;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.content {
-    text-align: center;
-}
-
-.content h1 {
-    letter-spacing: 1px;
-}
-
 img {
     border: 4px solid ;
 }
+
+/*for menu page*/
+.menuh2 {
+    text-align: center;
+    font-family: "KG All of me";
+    font-size: 35px;
+    text-decoration: underline;
+    margin: 0;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #000;
+    margin: 1% 1% 1% 29%;
+/*    Comment: this is class for h2 in the menu page*/
+}
+
+li {
+    list-style: none;
+}
+
+
+@use postcss-nested;
+
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 960px;
+  height: 100%; 
+}
+
+.menu-item {
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+    padding: 0 1rem;
+    margin: 0 0 1rem;
+    }
+
+.menusection {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    }
+
+.menuheader {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    }
+
+.spacer {
+    content: '';
+    width: 100%;
+    height: 1px;
+    margin: 0 .5rem;
+    border-bottom: 1px dashed black;
+    flex: 1;
+/*    Comment: This is the dotted line leading to the price*/
+        }
+  
+.menuh3 {
+    margin: 0;
+    font-size: 20px;
+    font-family: "KG All of me";
+    text-decoration: underline; 
+}
+    
+.menup {
+     font-family: 'Rubik Mono One', sans-serif;
+     font-size: 15px;
+     font-weight: bold;
+}  
+
+.price {
+     font-size: 20px;
+     font-family: "KG All of me";
+     color: white;
+}
+
+.menuh4 {
+    font-size: 35px;
+    font-family: "good brush";
+    text-align: center;
+}
+
+.bordermenu {
+    border: 5px solid black;
+    background-color: brown;
+}
+
 /*about page*/
 .aboutsection {
-    min-height: 400px;
-    margin: 0px auto;
-    width: 70%;    
-    border: 6px solid #021a40;
-}
-
-.zoom {
-  transition: transform .2s;
-  padding: 20px 70px 40px 10px; 
-  width: 200px;
-  height: 200px;
-  margin: 30px;
-}
-
-.zoom2 {
-  transition: transform .2s;  
-  width: 200px;
-  height: 200px;
-  margin: 30px;
-  padding: 20px 70px 40px 10px; 
-}
-
-.zoom:hover {
-  transform: scale(1.15);
-}
-
-.zoom2:hover {
-  transform: scale(1.15);
+     min-height: 400px;
+     margin: 0px auto;
+     width: 70%;    
+     border: 6px solid #021a40;
 }
 
 .wrap {
     display: inline-block;
     width: 100%;
-}
-
-.image {
-    background-color: #021a40;
-    width: 250px;
-    border: 3px solid black;
-    height: 225px;
-    float: left;
+    background-color: brown;
 }
 
 p2 {
@@ -264,17 +293,9 @@ p2 {
     float: right;
 }
 
-p2 li {
-    list-style: none;
-    margin: 15px 5px 5px 5px;
-    text-align: center;
-}
-
 .aboutp {
     display: inline-block;
-    width: 50%;
-    float: right;
-    margin: 8% 19% 1% 1%;
+    width: 100%;
     font-size: 20px;
     font-family: 'Rubik Mono One', sans-serif;
     font-weight: bold;
@@ -290,24 +311,66 @@ p2 li {
     display: block;
 }
 
-ul {
-    border: 6px solid black;
-    margin: 1%;
+.aboutp2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
 }
 
+h8 {
+    font-size: 25px;
+    font-family: "KG All of me";
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
 
-@media screen and (max-width:1200px){
-    
-    img {
-    background-color: #021a40;
+/*Comment: these are for the social media images*/
+ul.social-media img {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: lightblue;
     width: 100px;
-    border: 3px solid black;
-    height: 95px;
-    float: left;
-    
+    height: 100px;
+    position: relative;
+    margin: 1% 1% 1% 1%
 }
-    
-    
+
+ul.social-media {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.social-media li {
+    display: inline-block;
+}
+
+ul.social-media {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0px;
+}
+
+ul.social-media li {
+    display: inline-block;
+    margin: 2px;
+}
+
+ul.social-media img:hover {
+    background-color: #63D1F4;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /*contact page */
@@ -325,8 +388,6 @@ ul {
     text-align: center;
     color: black;
     font-weight: bolder;
-    
-
 }
 
 .contactp {
@@ -337,12 +398,32 @@ ul {
     color: black;
 }
 
+.body {
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 45%,#000000 45%,#524229  45%,#524229  100%);
+    height: 100%;    
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.contenth1 {
+    letter-spacing: 1px;
+}
 
 .form {
     width: 100%;
     margin: 25px 0;
 }
-
+/*Comment: these is for the contact form*/
 .top form,
 .middle form,
 .bottom form {
@@ -422,7 +503,7 @@ ul {
     text-transform: capitalize;
      /*this doesn't work*/
 }
-
++
 @media screen and (max-width: 460px) {
     .wrapper {
         margin: 25px auto 0;
