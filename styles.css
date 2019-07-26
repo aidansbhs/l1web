@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
 html {
     background-color: #cda767;
 }
@@ -5,6 +7,7 @@ html {
 *  {
   margin: 0px;
   padding: 0px;
+  user-select: none;
 }
 
 body {
@@ -34,7 +37,6 @@ section {
     width: 808px;    
     margin-bottom: 2vh;
 }
-
 
 div.m {
     font-size: 24px;
@@ -85,7 +87,7 @@ h1 {
 }
  
 .active {
-    color: red;
+    color: red; 
 }
 
 .m a{
@@ -118,7 +120,6 @@ h4 {
     text-align: center;
     font-family: "good brush";
     font-size: 30px;
-    color: white;
 }
 
 h5 {
@@ -187,8 +188,247 @@ p {
     margin-bottom: 1vh;
 }
 
+.wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    letter-spacing: 1px;
+}
+
 img {
     border: 4px solid ;
 }
+/*about page*/
+.aboutsection {
+    min-height: 400px;
+    margin: 0px auto;
+    width: 70%;    
+    border: 6px solid #021a40;
+}
+
+.zoom {
+  transition: transform .2s;
+  padding: 20px 70px 40px 10px; 
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+}
+
+.zoom2 {
+  transition: transform .2s;  
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  padding: 20px 70px 40px 10px; 
+}
+
+.zoom:hover {
+  transform: scale(1.15);
+}
+
+.zoom2:hover {
+  transform: scale(1.15);
+}
+
+.wrap {
+    display: inline-block;
+    width: 100%;
+}
+
+.image {
+    background-color: #021a40;
+    width: 250px;
+    border: 3px solid black;
+    height: 225px;
+    float: left;
+}
+
+p2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 8% 23% 1% 1%;
+    display: inline-block;
+    width: 50%;
+    float: right;
+}
+
+p2 li {
+    list-style: none;
+    margin: 15px 5px 5px 5px;
+    text-align: center;
+}
+
+.aboutp {
+    display: inline-block;
+    width: 50%;
+    float: right;
+    margin: 8% 19% 1% 1%;
+    font-size: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bold;
+    padding: 42px;
+    text-align: center;
+}
+
+.abouth2 {
+    text-align: center;
+    font-family: "good brush";
+    font-size: 40px;
+    padding-top: 50px;
+    display: block;
+}
+
+ul {
+    border: 6px solid black;
+    margin: 1%;
+}
 
 
+@media screen and (max-width:1200px){
+    
+    img {
+    background-color: #021a40;
+    width: 100px;
+    border: 3px solid black;
+    height: 95px;
+    float: left;
+    
+}
+    
+    
+}
+
+/*contact page */
+.contacth4 {
+    font-size: 24px;
+    text-align: center;
+    font-family: "KG All of me";
+    color: black;
+    font-weight: bold;
+}
+
+.contacth3 {
+     font-family: "Bebas Neue";
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    
+
+}
+
+.contactp {
+    font-size: 18px;
+    font-family:'Francois One', sans-serif; 
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+}
+
+
+.form {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top form,
+.middle form,
+.bottom form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    outline: none;
+    transition: all 02.s ease;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color: #4ca1af;
+    box-shadow: inset 0 1px 1px rgba(0,0,0, 0.0125),
+        0 0 8px rgba(76,161,175, 0.5);   
+}
+
+.form .label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.top-form .inner-form {
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea {
+    height: 120px;
+}
+
+.btn {
+    background: #4ca1af;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+    /*this doesn't work*/
+}
+
+::-moz-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+     /*this doesn't work*/
+}
+
+::-ms-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+     /*this doesn't work*/
+}
+
+@media screen and (max-width: 460px) {
+    .wrapper {
+        margin: 25px auto 0;
+    }
+    .top-form .inner-form  {
+        width: 100%;
+        margin-top: 5px 0;
+    }
+}
