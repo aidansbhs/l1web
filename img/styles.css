@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+
+html {
+    background-color: #cda767;
+}
+
+*  {
+  margin: 0px;
+  padding: 0px;
+  user-select: none;
+}
+
+body {
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 46.2%,#000000 46.2%,#524229  46.2%,#524229 100%);
+}
+
+nav {
+    width: 805px;
+    margin: 1vh auto;
+    display: flex;
+    text-align: center;
+}
+
+
+nav a {
+    background-color: none;
+    display: inline-block;
+    width: 25%;
+    font-family: "KG all of me";
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+section {
+    min-height: 400px;
+    margin: 0px auto;
+    width: 808px;    
+    margin-bottom: 2vh;
+}
+
+div.m {
+    font-size: 24px;
+    min-height: 2vh;
+    width: 20vh; 
+    margin: 0% auto;
+    font-family: "KG all of me";
+    background-color: #be6006;
+    padding: 0.25% 0.5% 0.5% 1%;
+    border: 4px solid #021a40;
+    text-decoration: none;
+    margin-bottom: 3vh
+}
+
+h1 {
+    text-align: center;
+    font-family: "good brush";
+    font-size: 50px;
+}
+
+.line {
+    width: 24%;
+    border-bottom: 4px solid #021a40;
+    margin: 0% 2px 10px 2px;
+}
+
+.boxes {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.boxes li {
+    width: 15%;
+    background-color: black;
+    min-height: 25%;
+    margin: 0.5% auto;
+    list-style: none;
+}
+
+.boxes li img {
+    width: 100%;
+    height: 100%;
+}
+
+ a:hover {
+    color: red;
+}
+ 
+.active {
+    color: red; 
+}
+
+.m a{
+    color: white;
+}
+
+.line2 {
+    width: 90.5%;
+    border-bottom: 4px solid #021a40;
+    margin: 1% 10px 6px 5%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "good brush";
+    font-size: 35px;
+    margin-bottom: 2vh;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+    font-family: "KG All of me";
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+h4 {
+    text-align: center;
+    font-family: "good brush";
+    font-size: 30px;
+}
+
+h5 {
+    color: #ab5200;
+    font-family: "KG All of me";
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 1vh;
+    padding-top: 1vh;
+}
+
+h6 {
+    text-align: center;
+    font-family: "KG All of me";
+    font-size: 12px;
+}
+
+div.a {
+    color: white;
+    font-family: "good brush";
+    text-align: left;
+    font-size: 21px;
+    margin: 1vh auto ;
+    display: inline-block
+}
+
+div.b {
+    color: white;
+    font-family: "good brush";
+    text-align: center;
+    font-size: 21px;
+    margin: 1vh auto;
+    display: inline-block
+}
+
+div.c {
+    color: white;
+    font-family: "good brush";
+    text-align: center;
+    font-size: 21px;
+    margin: 1vh auto;
+    display: inline-block
+}
+
+div.d {
+     color: white;
+    font-family: "good brush";
+    text-align: right;
+    font-size: 21px;
+    margin: 1vh auto;
+    display: inline-block
+}
+   
+
+footer {
+    background-color: #201d14;
+    height: 13vh;
+    margin-top: 90px;
+}
+
+p {
+    text-align: center;
+    font-family: "KG All of me";
+    font-size: 15px;
+    color: #ab5200;
+    margin-bottom: 1vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    letter-spacing: 1px;
+}
+
+img {
+    border: 4px solid ;
+}
+
+.aboutsection {
+    min-height: 400px;
+    margin: 0px auto;
+    width: 70%;    
+    border: 6px solid #021a40;
+}
+
+
+
+/*contact page */
+.contacth4 {
+    font-size: 24px;
+    text-align: center;
+    font-family: "KG All of me";
+    color: black;
+    font-weight: bold;
+}
+
+.contacth3 {
+     font-family: "Bebas Neue";
+    font-size: 40px;
+    text-align: center;
+    color: black;
+
+}
+
+.contactp {
+    font-size: 18px;
+    font-family:'Francois One', sans-serif; 
+    text-align: center;
+    margin: 10px auto;
+    color: black;
+}
+
+
+.form {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top form,
+.middle form,
+.bottom form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    outline: none;
+    transition: all 02.s ease;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color: #4ca1af;
+    box-shadow: inset 0 1px 1px rgba(0,0,0, 0.0125),
+        0 0 8px rgba(76,161,175, 0.5);   
+}
+
+.form .label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.top-form .inner-form {
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea {
+    height: 120px;
+}
+
+.btn {
+    background: #4ca1af;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+    /*this doesn't work*/
+}
+
+::-moz-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+     /*this doesn't work*/
+}
+
+::-ms-input-placeholder {
+    font-family: 'Kavianar', cursive;
+    text-transform: capitalize;
+     /*this doesn't work*/
+}
+
+@media screen and (max-width: 460px) {
+    .wrapper {
+        margin: 25px auto 0;
+    }
+    .top-form .inner-form  {
+        width: 100%;
+        margin-top: 5px 0;
+    }
+}

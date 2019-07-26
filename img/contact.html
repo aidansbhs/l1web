@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+         $(document).ready(function(){
+             $(".btn").click(function(){
+                 $("input[type='text'],textarea").val("");
+             });
+         });
+    </script>
+</head>
+    <style>
+        
+    body {
+    background: linear-gradient(to bottom, #cda767 0%,#cda767 45%,#000000 45%,#524229  45%,#524229  100%);
+    height: 100%;    
+}
+    
+    </style>
+<body>
+    <br>
+    <h1>Rapid Ramen</h1>
+    <nav>
+        <div class="line"></div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <div class="line"></div>
+    </nav>
+    <br>
+<section>
+    <br>
+    <div class="contacth3">
+    Contact Rapid Ramen:
+        </div>
+    <br>
+    <div class="contacth4">
+    How Can we help?
+        </div>
+    <br>
+    <div class="contactp">
+    If you have any questions or want to book reservations call: 31415926535
+    Unfortunately we at this point in time we don't do online ordering, but it is something we are looking in to. Or if you have any messages for us fill out the contact form below
+  </div>
+    <br>
+    <div class="wrapper">
+    <div class="content">       
+        <div class="contacth3">
+        CONTACT FORM
+            </div>
+        <div class="contactp">
+        Send us your views
+        </div>
+        </div>
+        
+        <div class="form">
+          <div class="top-form">    
+            <div class="inner-form">
+             <div class="label">Name</div>
+               <input type="text" placeholder="Jono">
+            </div>
+           <div class="inner-form">
+              <div class="label">Email</div>
+               <input type="text" placeholder="Example@gmail.com">
+           </div> 
+           <div class="inner-form">
+              <div class="label">Phone</div>
+               <input type="text" placeholder="1234567890">
+              </div>
+            </div> 
+        
+        <div class="middle-form">
+             <div class="inner-form">
+              <div class="label">Subject</div>
+               <input type="text" placeholder="Subject">
+              </div>
+            </div>
+            
+        <div class="bottom-form">
+             <div class="inner-form">
+              <div class="label">Message</div>
+               <textarea placeholder="Your Message"></textarea>
+              </div>
+            </div> 
+            
+            <div class="btn">Send Form</div>
+        </div>
+</div>
+    <div class="contacth3">
+    Thanks we really appreciate your feedback
+    </div>
+    <br>
+</section>
+</body>
+</html>
