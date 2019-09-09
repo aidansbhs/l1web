@@ -169,6 +169,12 @@ img {
     border: 4px solid ;
 }
 
+.main {
+     width: 800px;
+     height: 535px;
+     border: 4px solid; 
+}
+
 /*for menu page*/
 .menuh2 {
     text-align: center;
